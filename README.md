@@ -1,6 +1,5 @@
-# Kubernetes <picture>
-<img align="right" src="https://i.imgur.com/Wd6kOMV.png" width = 350px></picture>
-
+# Kubernetes 
+<picture><img align="right" src="https://i.imgur.com/ivd0NUj.png" width = 350px></picture>
 
 Kubernetes (K8s) is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications. It allows you to easily manage and scale containerized workloads, ensuring high availability and efficient resource utilization.
 
@@ -93,7 +92,7 @@ This command will help you set up a new folder with the required files and guide
 
 ### 3. Customize kube.tf
 
-In your project folder, you will find the `kube.tf` file. Customize this file to suit your needs, specifying variables such as the number of control-plane and agent nodes, CNI choice, and other cluster configurations.
+In your project folder, you will find the `kube.tf` file. Customize this file to suit your needs, specifying variables such as the number of control-plane and agent nodes, CNI choice, and other cluster configurations. An example of a `cube.tf` file is in the root of this repository; please check it out. It is quite simple to create a Kubernetes cluster in Hetzner for an affordable price.
 
 ### 4. Initialize and Apply Terraform
 
