@@ -1,17 +1,21 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: name
+  name: mongo-express
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-    - host: app.com
-      http:
-        paths:
-          - path: /
-            backend:
-              serviceName: my-service
-              servicePort: 8080
+  - host: app.com
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: mongo-express-service
+              port:
+                number: 80
+
 
 
